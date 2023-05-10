@@ -10,11 +10,11 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="format-detection" content="telephone=no">
-    <link rel="stylesheet" href="layui-v2.8.2/layui/css/layui.css" media="all">
+    <link rel="stylesheet" href="/static/layui-v2.8.2/layui/css/layui.css" media="all">
 
     <style>
         body {
-            background-image: url("images/login-bg.jpeg");
+            background-image: url("/static/images/login-bg.jpeg");
             height: 100%;
             width: 100%;
         }
@@ -115,6 +115,7 @@
     </style>
 </head>
 <body>
+{{ hello }}
 <div id="container">
     <div></div>
     <div class="admin-login-background">
@@ -158,7 +159,7 @@
     </div>
 </div>
 </body>
-<script src="layui-v2.8.2/layui/layui.js" charset="utf-8"></script>
+<script src="/static/layui-v2.8.2/layui/layui.js" charset="utf-8"></script>
 <script>
     layui.use([ 'form','jquery','layer' ], function() {
         var form = layui.form,
